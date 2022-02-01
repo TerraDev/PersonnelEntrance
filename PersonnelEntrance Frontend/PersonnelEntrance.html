@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./PersonnelEntrance.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.1/toastr.min.css" rel="stylesheet" media="all">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.1/toastr.min.js" defer></script>
+    <script src="./Adapter.js" defer></script>
+    <script src="./PersonnelEntrance.js" defer></script>
+    <title>Personnel page</title>
+</head>
+<body>
+    <div class="ContainerQ">
+        <div class="TableQ">
+            <div id="Header" class="RowQ">
+                <div class="CellQ inHeader" id="ButtonsColumn"></div>
+                <div class="CellQ inHeader" id="IOColumn">
+                    <span>In/Out</span>
+                </div>
+                <div class="CellQ inHeader" id="DateColumn">
+                    <span>Date - Time</span>
+                </div>
+                <div class="CellQ inHeader" id="PersonnelName">
+                    <span>Personnel name</span>
+                </div>
+            </div>
+            <div class="TableBodyQ">
+                <form id="AddRow" class="RowQ">
+                    <div class="CellQ">
+                        <input id="AddCell" type="button" value="Submit" onclick="onclickSubmitButton()"/>
+                    </div>
+                    <div class="CellQ">
+                        <select class="PassTypeCell" name="PassType" >
+                            <option value='In'>وارد شد</option>
+                            <option value='Out'>خارج شد</option>
+                        </select>
+                    </div>
+                    <div class="CellQ">
+                        <input class="PassTimeCell" name="PassTime" type="datetime-local"/>
+                    </div>
+                    <div class="CellQ">
+                        <input class="PersonnelNameCell" name="PersonnelName" type="text"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

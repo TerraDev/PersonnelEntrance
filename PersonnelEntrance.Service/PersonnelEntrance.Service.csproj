@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PersonnelEntrance.DataAccess\PersonnelEntrance.DataAccess.csproj" />
+    <ProjectReference Include="..\PersonnelEntrance.DomainModel\PersonnelEntrance.DomainModel.csproj" />
+    <ProjectReference Include="..\PersonnelEntrance.DTO\PersonnelEntrance.DTO.csproj" />
+  </ItemGroup>
+
+</Project>
